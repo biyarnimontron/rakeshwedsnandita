@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 320" width="100%" height="100%">
+  <defs>
+    <linearGradient id="brassGold" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#b45309"/>
+      <stop offset="25%" stop-color="#f59e0b"/>
+      <stop offset="50%" stop-color="#fef08a"/>
+      <stop offset="75%" stop-color="#d97706"/>
+      <stop offset="100%" stop-color="#92400e"/>
+    </linearGradient>
+    <linearGradient id="betelLeaf" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#4ade80"/>
+      <stop offset="100%" stop-color="#15803d"/>
+    </linearGradient>
+    <filter id="xoraiShadow" x="-10%" y="-10%" width="120%" height="130%">
+      <feDropShadow dx="0" dy="5" stdDeviation="5" flood-color="#451a03" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+
+  <g filter="url(#xoraiShadow)">
+    <ellipse cx="150" cy="290" rx="70" ry="16" fill="url(#brassGold)" stroke="#78350f" stroke-width="2"/>
+    <ellipse cx="150" cy="286" rx="60" ry="12" fill="#d97706" opacity="0.6"/>
+    <path d="M100,285 C100,270 120,250 135,220 L165,220 C180,250 200,270 200,285 Z" fill="url(#brassGold)" stroke="#78350f" stroke-width="1.5"/>
+
+    <ellipse cx="150" cy="220" rx="26" ry="8" fill="url(#brassGold)" stroke="#78350f" stroke-width="1.5"/>
+    <ellipse cx="150" cy="245" rx="20" ry="6" fill="#fef08a" stroke="#92400e" stroke-width="1"/>
+    <ellipse cx="150" cy="268" rx="36" ry="9" fill="url(#brassGold)" stroke="#78350f" stroke-width="1"/>
+
+    <path d="M138,220 L134,170 L166,170 L162,220 Z" fill="url(#brassGold)" stroke="#78350f" stroke-width="1.5"/>
+    <ellipse cx="150" cy="190" rx="18" ry="5" fill="#fef08a" stroke="#92400e" stroke-width="1"/>
+
+    <ellipse cx="150" cy="170" rx="115" ry="32" fill="url(#brassGold)" stroke="#78350f" stroke-width="2.5"/>
+    <ellipse cx="150" cy="168" rx="100" ry="24" fill="#92400e" stroke="#78350f" stroke-width="1"/>
+    <ellipse cx="150" cy="167" rx="96" ry="22" fill="#b45309"/>
+
+    <path d="M110,165 C85,155 90,140 120,150 C145,158 135,170 110,165 Z" fill="url(#betelLeaf)" stroke="#166534" stroke-width="1"/>
+    <path d="M190,165 C215,155 210,140 180,150 C155,158 165,170 190,165 Z" fill="url(#betelLeaf)" stroke="#166534" stroke-width="1"/>
+    <path d="M150,172 C125,155 135,135 150,145 C165,135 175,155 150,172 Z" fill="url(#betelLeaf)" stroke="#14532d" stroke-width="1.2"/>
+
+    <ellipse cx="140" cy="160" rx="7" ry="9" fill="#78350f" stroke="#451a03" stroke-width="1"/>
+    <ellipse cx="160" cy="160" rx="7" ry="9" fill="#92400e" stroke="#451a03" stroke-width="1"/>
+    <ellipse cx="150" cy="164" rx="8" ry="9" fill="#b45309" stroke="#451a03" stroke-width="1"/>
+
+    <ellipse cx="150" cy="170" rx="113" ry="31" fill="none" stroke="#fef08a" stroke-width="1.5" stroke-dasharray="4,4"/>
+
+    <path d="M70,175 C60,195 55,225 65,245 C75,250 85,250 85,240 C80,215 85,190 95,175 Z" fill="#ffffff" stroke="#e5e7eb" stroke-width="1"/>
+    <path d="M62,235 L82,233 M64,240 L84,238 M65,243 L85,241" stroke="#dc2626" stroke-width="2"/>
+    <path d="M60,220 C68,223 75,223 83,218" stroke="#dc2626" stroke-width="2.5"/>
+  </g>
+</svg>

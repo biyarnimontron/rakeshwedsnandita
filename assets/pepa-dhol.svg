@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 220" width="100%" height="100%">
+  <defs>
+    <linearGradient id="dholWood" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#78350f"/>
+      <stop offset="50%" stop-color="#b45309"/>
+      <stop offset="100%" stop-color="#451a03"/>
+    </linearGradient>
+    <linearGradient id="pepaHorn" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#27272a"/>
+      <stop offset="50%" stop-color="#09090b"/>
+      <stop offset="100%" stop-color="#18181b"/>
+    </linearGradient>
+    <linearGradient id="pepaBrass" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#b45309"/>
+      <stop offset="50%" stop-color="#fef08a"/>
+      <stop offset="100%" stop-color="#d97706"/>
+    </linearGradient>
+    <filter id="instShadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="4" stdDeviation="4" flood-color="#451a03" flood-opacity="0.25"/>
+    </filter>
+  </defs>
+
+  <g filter="url(#instShadow)">
+    <g transform="translate(40, 40) rotate(-10)">
+      <path d="M40,50 C70,35 120,35 150,50 L140,110 C110,125 60,125 30,110 Z" fill="url(#dholWood)" stroke="#451a03" stroke-width="2"/>
+      <ellipse cx="35" cy="80" rx="12" ry="32" fill="#fef3c7" stroke="#92400e" stroke-width="2"/>
+      <ellipse cx="145" cy="80" rx="12" ry="32" fill="#fef3c7" stroke="#92400e" stroke-width="2"/>
+      <path d="M42,52 L70,115 L95,44 L120,115 L142,54" stroke="#fef08a" stroke-width="1.8" fill="none"/>
+      <path d="M75,40 C85,38 105,38 115,40 L108,118 C98,120 78,120 68,118 Z" fill="#ffffff" stroke="#e5e7eb" stroke-width="1"/>
+      <path d="M72,60 L112,60" stroke="#dc2626" stroke-width="3"/>
+      <path d="M70,70 L110,70" stroke="#dc2626" stroke-width="1.5"/>
+      <polygon points="90,75 96,82 90,89 84,82" fill="#dc2626"/>
+      <path d="M68,100 L108,100" stroke="#dc2626" stroke-width="3"/>
+      <line x1="10" y1="120" x2="60" y2="60" stroke="#d97706" stroke-width="3.5" stroke-linecap="round"/>
+    </g>
+
+    <g transform="translate(130, 20) rotate(15)">
+      <path d="M50,130 C70,110 90,70 85,30 C95,30 115,60 110,105 C105,140 75,165 40,165 Z" fill="url(#pepaHorn)" stroke="#09090b" stroke-width="1.5"/>
+      <rect x="78" y="10" width="12" height="35" rx="3" fill="#d97706" stroke="#92400e" stroke-width="1"/>
+      <path d="M75,55 C85,55 95,60 102,65" stroke="url(#pepaBrass)" stroke-width="3" fill="none"/>
+      <path d="M65,95 C80,95 95,102 106,112" stroke="url(#pepaBrass)" stroke-width="3.5" fill="none"/>
+      <ellipse cx="45" cy="150" rx="12" ry="16" fill="none" stroke="url(#pepaBrass)" stroke-width="3.5"/>
+      <path d="M82,20 Q60,30 55,60" stroke="#ef4444" stroke-width="2" fill="none"/>
+      <circle cx="55" cy="62" r="3" fill="#b91c1c"/>
+    </g>
+  </g>
+</svg>

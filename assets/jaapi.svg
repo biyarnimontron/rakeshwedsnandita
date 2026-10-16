@@ -1,0 +1,63 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 240" width="100%" height="100%">
+  <defs>
+    <radialGradient id="jaapiBamboo" cx="50%" cy="40%" r="50%">
+      <stop offset="0%" stop-color="#fffbeb"/>
+      <stop offset="40%" stop-color="#fef3c7"/>
+      <stop offset="85%" stop-color="#fde68a"/>
+      <stop offset="100%" stop-color="#d97706"/>
+    </radialGradient>
+    <linearGradient id="jaapiRed" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ef4444"/>
+      <stop offset="100%" stop-color="#991b1b"/>
+    </linearGradient>
+    <linearGradient id="jaapiGreen" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#15803d"/>
+      <stop offset="100%" stop-color="#14532d"/>
+    </linearGradient>
+    <filter id="jaapiShadow" x="-10%" y="-10%" width="120%" height="130%">
+      <feDropShadow dx="0" dy="4" stdDeviation="6" flood-color="#78350f" flood-opacity="0.25"/>
+    </filter>
+  </defs>
+
+  <g filter="url(#jaapiShadow)">
+    <ellipse cx="150" cy="130" rx="125" ry="75" fill="url(#jaapiBamboo)" stroke="#b45309" stroke-width="2.5"/>
+    <ellipse cx="150" cy="128" rx="110" ry="64" fill="none" stroke="#d97706" stroke-width="1.2" stroke-dasharray="3,3"/>
+    <ellipse cx="150" cy="124" rx="90" ry="52" fill="none" stroke="#b45309" stroke-width="1.2" stroke-dasharray="4,3"/>
+    <ellipse cx="150" cy="118" rx="70" ry="40" fill="none" stroke="#d97706" stroke-width="1" stroke-dasharray="3,3"/>
+    <ellipse cx="150" cy="110" rx="48" ry="28" fill="none" stroke="#b45309" stroke-width="1" stroke-dasharray="2,2"/>
+
+    <path d="M150,90 L30,130 M150,90 L270,130 M150,90 L60,175 M150,90 L240,175 M150,90 L100,200 M150,90 L200,200 M150,90 L150,205" stroke="#f59e0b" stroke-width="0.8" opacity="0.6"/>
+
+    <ellipse cx="150" cy="130" rx="123" ry="73" fill="none" stroke="url(#jaapiRed)" stroke-width="5"/>
+    <ellipse cx="150" cy="130" rx="118" ry="70" fill="none" stroke="#111827" stroke-width="1.5"/>
+
+    <polygon points="150,175 160,188 150,200 140,188" fill="url(#jaapiRed)" stroke="#991b1b" stroke-width="1"/>
+    <circle cx="150" cy="188" r="3" fill="#15803d"/>
+
+    <polygon points="105,170 115,180 105,190 95,180" fill="url(#jaapiRed)" stroke="#991b1b" stroke-width="1"/>
+    <circle cx="105" cy="180" r="2.5" fill="#15803d"/>
+
+    <polygon points="195,170 205,180 195,190 185,180" fill="url(#jaapiRed)" stroke="#991b1b" stroke-width="1"/>
+    <circle cx="195" cy="180" r="2.5" fill="#15803d"/>
+
+    <polygon points="65,145 74,154 65,162 56,154" fill="url(#jaapiRed)" stroke="#991b1b" stroke-width="0.8"/>
+    <circle cx="65" cy="154" r="2" fill="#15803d"/>
+
+    <polygon points="235,145 244,154 235,162 226,154" fill="url(#jaapiRed)" stroke="#991b1b" stroke-width="0.8"/>
+    <circle cx="235" cy="154" r="2" fill="#15803d"/>
+
+    <ellipse cx="150" cy="95" rx="36" ry="22" fill="#fef08a" stroke="#b45309" stroke-width="1.5"/>
+    <polygon points="150,45 130,90 170,90" fill="url(#jaapiBamboo)" stroke="#b45309" stroke-width="1.5"/>
+    <path d="M150,55 L155,80 L145,80 Z" fill="url(#jaapiRed)"/>
+    <ellipse cx="150" cy="90" rx="28" ry="16" fill="none" stroke="url(#jaapiRed)" stroke-width="3"/>
+    <circle cx="150" cy="90" r="6" fill="#15803d"/>
+    <circle cx="150" cy="90" r="3" fill="#fef08a"/>
+
+    <ellipse cx="150" cy="46" rx="8" ry="5" fill="#ef4444" stroke="#7f1d1d" stroke-width="1"/>
+    <circle cx="150" cy="40" r="4.5" fill="#f59e0b" stroke="#78350f" stroke-width="1"/>
+    <circle cx="150" cy="35" r="2" fill="#ef4444"/>
+
+    <path d="M150,200 Q150,215 152,225" stroke="#ef4444" stroke-width="2" fill="none"/>
+    <circle cx="152" cy="226" r="3" fill="#b91c1c"/>
+  </g>
+</svg>

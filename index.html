@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="as">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
+  <title>ৰাকেশ আৰু নন্দিতাৰ শুভ বিবাহ | Rakesh &amp; Nandita Wedding Invitation</title>
+  <meta name="description" content="Assamese Wedding Invitation of Rakesh &amp; Nandita. Events: Jurun (25 Nov), Wedding (26 Nov), Reception (28 Nov 2026).">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700;800&family=Montserrat:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,600;0,700;1,600&family=Tiro+Bangla:ital@0;1&display=swap" rel="stylesheet">
+
+  <!-- Custom Fonts for Auspicious Invocation & Royal Titles -->
+  <link rel="preload" href="assets/fonts/Teesta.ttf" as="font" type="font/ttf" crossorigin>
+  <link rel="preload" href="assets/fonts/Rangpur.ttf" as="font" type="font/ttf" crossorigin>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Floating Falling Petals Canvas -->
+  <canvas id="petals-canvas"></canvas>
+
+  <!-- Top Floating Controls (Centered & Responsive) -->
+  <aside class="top-nav-bar">
+    <div class="top-nav-inner">
+      <!-- Language Switcher -->
+      <div class="lang-switch" role="group" aria-label="Language selection">
+        <button class="lang-btn active" data-lang="as">অসমীয়া</button>
+        <button class="lang-btn" data-lang="en">EN</button>
+      </div>
+
+      <div class="nav-divider"></div>
+
+      <!-- Controls: Music & Petals -->
+      <div class="nav-controls">
+        <!-- Ambient Music Synthesizer Player -->
+        <button id="music-toggle-btn" class="ctrl-btn" title="Toggle Shehnai / Flute Music" aria-label="Toggle music">
+          <span class="ctrl-icon">🎵</span>
+          <div id="music-waves" class="music-waves paused" aria-hidden="true">
+            <span class="music-bar"></span>
+            <span class="music-bar"></span>
+            <span class="music-bar"></span>
+          </div>
+        </button>
+
+        <!-- Petals Toggle -->
+        <button id="petal-toggle-btn" class="ctrl-btn" title="Toggle Flower Petals" aria-label="Toggle petals">
+          <span class="ctrl-icon">🌸</span>
+        </button>
+      </div>
+    </div>
+  </aside>
+
+  <!-- Mobile-first Central Stage Container -->
+  <div class="site-container">
+
+    <!-- ====================================================================
+         1. HERO SECTION (Opening Atmospheric Presentation)
+         ==================================================================== -->
+    <header id="hero" class="hero-section">
+      <!-- Ahom Toran Top Border -->
+      <div class="hero-toran"></div>
+      <div class="hero-aura-glow"></div>
+
+      <div class="hero-header">
+        <img src="assets/ganesha.svg" alt="Auspicious Ganesha" class="hero-ganesha-badge">
+        <div id="hero-auspice-tag" class="hero-auspice">॥ শ্ৰী শ্ৰী প্ৰজাপতয়ে নমঃ ॥</div>
+        <h1 id="hero-title-text" class="hero-title">ৰাকেশ আৰু নন্দিতা</h1>
+        <div id="hero-sub-text" class="hero-sub">নিমন্ত্ৰণী শৰাই</div>
+      </div>
+
+      <!-- Main Couple Portrait in Royal Arch Frame -->
+      <div class="hero-image-stage">
+        <div class="hero-arch-frame">
+          <div class="hero-arch-inner">
+            <img src="assets/Faceless South Asian Wedding Couple.png" 
+                 alt="ৰাকেশ আৰু নন্দিতা - Assamese Wedding Couple" 
+                 class="hero-couple-img" 
+                 loading="eager" 
+                 fetchpriority="high">
+          </div>
+        </div>
+      </div>
+
+      <div class="hero-names-wrap">
+        <div id="hero-groom-display" class="hero-groom-name">Rakesh</div>
+        <div id="hero-weds-badge" class="hero-weds-badge">weds</div>
+        <div id="hero-bride-display" class="hero-bride-name">Nandita</div>
+      </div>
+    </header>
+
+    <!-- ====================================================================
+         2. AUSPICIOUS ANNOUNCEMENT SECTION (ভাল খবৰ)
+         ==================================================================== -->
+    <section id="announcement-section" class="announcement-section">
+      <div class="announcement-stage-bg"></div>
+      
+      <div class="announcement-card clearfix">
+        <img src="assets/Quiet Conversation on the Stone Ledge.png" 
+             alt="ৰাকেশ আৰু নন্দিতা" 
+             class="announcement-wrap-img" 
+             loading="lazy">
+        
+        <div id="announcement-verse" class="announcement-verse">
+          <p id="announcement-lead" class="verse-lead">ভাল খবৰ এটা আছে,</p>
+          <p id="announcement-line1" class="verse-line">এইবাৰ সোণগুটি চপোৱাৰ সময়তে</p>
+          <p id="announcement-line2" class="verse-line">মোৰ গাটো মাহ হালধিৰে ধুৱাই দিয়াৰ কথা চিন্তা কৰিছে।</p>
+          <p id="announcement-highlight" class="verse-highlight">ঘৰৰ মানুহে নন্দিতাক বোৱাৰী কৰি অনাৰ যো-জা চলাইছে।</p>
+        </div>
+
+        <div class="announcement-divider">
+          <span class="announcement-divider-line"></span>
+          <span class="announcement-flourish">❦ ❖ ❦</span>
+          <span class="announcement-divider-line"></span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ====================================================================
+         3. LIVE COUNTDOWN TIMER STRIP
+         ==================================================================== -->
+    <section class="countdown-strip">
+      <div id="cd-header-text" class="cd-header">⏳ শুভ বিবাহলৈ বাকী সময়</div>
+      <div class="timer-boxes-grid">
+        <div class="timer-box">
+          <span id="cd-days" class="timer-val">0</span>
+          <span id="label-days" class="timer-sub">দিন</span>
+        </div>
+        <div class="timer-box">
+          <span id="cd-hours" class="timer-val">00</span>
+          <span id="label-hours" class="timer-sub">ঘণ্টা</span>
+        </div>
+        <div class="timer-box">
+          <span id="cd-mins" class="timer-val">00</span>
+          <span id="label-mins" class="timer-sub">মিনিট</span>
+        </div>
+        <div class="timer-box">
+          <span id="cd-secs" class="timer-val">00</span>
+          <span id="label-secs" class="timer-sub">ছেকেণ্ড</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ====================================================================
+         4. FORMAL WEDDING INVITATION CARD (ShaadiOra & DreamsInvite layout)
+         ==================================================================== -->
+    <section class="card-section">
+      <article class="formal-card">
+        <!-- Top Kingkhap Ribbon -->
+        <div class="card-border-ribbon card-ribbon-top"></div>
+
+        <div class="card-emblems">
+          <img src="assets/jaapi.svg" alt="Jaapi" class="card-emblem-img">
+          <img src="assets/xorai.svg" alt="Xorai" class="card-emblem-img" style="width: 58px; height: 58px;">
+          <img src="assets/jaapi.svg" alt="Jaapi" class="card-emblem-img">
+        </div>
+
+        <p id="card-intro" class="card-invitation-verse">
+          অগ্নী-সাক্ষী কৰি সাটো জনমৰ দোলেৰে বান্ধ খাই সমাজৰ আগত মোৰ সেই বিশেষ গৰাকীক অৰ্ধাঙ্গিনি ৰূপে পৰিচয় কৰাই দিবলৈ আগবাঢ়িছো অহা
+          <span class="card-date-highlight">৯ আঘোণ, (২৬ নৱেম্বৰ, ২০২৬) বৃহস্পতিবাৰে।</span>
+        </p>
+
+        <div class="card-divider-flourish">
+          <span class="line"></span>
+          <span class="icon">❖ ❦ ❖</span>
+          <span class="line"></span>
+        </div>
+
+        <p id="card-reception" class="card-invitation-verse">
+          সেই উপলক্ষে আমাৰ এই মধুময় ক্ষণটিত ৰাইজ আৰু আত্মীয়ৰ একাঁজলী আশাৰ্বাদ বিচাৰি অহা
+          <span class="card-date-highlight">১১ আঘোণ (ইংৰাজী ২৮ নৱেম্বৰ) শনিবাৰে</span>
+          এভাগি অভ্যৰ্থনাৰ আয়োজন কৰিছো।
+        </p>
+
+        <!-- Bottom Kingkhap Ribbon -->
+        <div class="card-border-ribbon card-ribbon-bottom"></div>
+      </article>
+    </section>
+
+    <!-- ====================================================================
+         5. EVENTS TIMELINE (Jurun, Wedding, Reception)
+         ==================================================================== -->
+    <section id="events" class="timeline-section">
+      <span id="timeline-eyebrow" class="section-eyebrow">শুভ দিনপঞ্জী</span>
+      <h2 id="timeline-title" class="section-title">অনুষ্ঠানসমূহ</h2>
+
+      <div class="timeline-journey-wrap">
+        <!-- Connecting Journey Line -->
+        <div class="timeline-track-line"></div>
+
+        <!-- 1. JURUN (জোৰোণ) -->
+        <div class="timeline-node">
+          <div class="node-marker"></div>
+          <div class="timeline-event-card clearfix">
+            <span id="badge-jurun" class="event-badge-pill badge-jurun">জোৰোণ পৰ্ব</span>
+
+            <div class="event-wrap-container clearfix">
+              <img src="assets/Faceless Indian Couple in Traditional Attire.png" 
+                   alt="Jurun Ceremony - Traditional Attire" 
+                   class="event-wrap-img" 
+                   loading="lazy">
+
+              <h3 id="jurun-title" class="event-name-title">জোৰোণ (Jurun)</h3>
+              <div id="jurun-date" class="event-date-display">২৫ নৱেম্বৰ, ২০২৬ (বুধবাৰ)</div>
+              <div class="event-date-en">25th November, 2026</div>
+
+              <p id="jurun-desc" class="event-desc-text">
+                কইনাঘৰলৈ পবিত্ৰ জোৰোণ আৰু মাংগলিক উপহাৰৰ শুভ যাত্ৰা।
+              </p>
+            </div>
+
+            <div class="event-actions-row">
+              <a href="https://calendar.google.com/calendar/render?action=TEMPLATE&text=Jurun+(জোৰোণ)+-+Nandita+%26+Rakesh+Wedding&dates=20261125T100000/20261125T160000&details=Jurun+Ceremony+of+Nandita+and+Rakesh" 
+                 target="_blank" rel="noopener noreferrer" class="cal-link-btn">
+                <span>Google Calendar</span> 📅
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- 2. WEDDING (বিয়া) - MAIN EVENT WITH SCRATCH CARD -->
+        <div class="timeline-node">
+          <div class="node-marker main-event-marker"></div>
+          <div class="timeline-event-card card-wedding">
+            <span id="badge-wedding" class="event-badge-pill badge-wedding">মূল অনুষ্ঠান</span>
+
+            <div class="event-card-header">
+              <div>
+                <h3 id="wedding-title" class="event-name-title">শুভ বিবাহ (Wedding)</h3>
+                <div id="wedding-date" class="event-date-display">২৬ নৱেম্বৰ, ২০২৬ (বৃহস্পতিবাৰ)</div>
+                <div class="event-date-en">26th November, 2026</div>
+              </div>
+              <span style="font-size: 1.8rem;">💍</span>
+            </div>
+
+            <!-- Interactive Scratch Card Box -->
+            <div class="scratch-card-container">
+              <div class="scratch-box-wrapper">
+                <!-- Underneath Revealed Content -->
+                <div class="scratch-revealed-content">
+                  <div class="revealed-date-title">২৬ নৱেম্বৰ, ২০২৬</div>
+                  <div class="revealed-date-sub">26th November, 2026</div>
+                  <span id="revealed-badge" class="revealed-badge-pill" style="display: none;">উন্মোচিত!</span>
+                </div>
+                <!-- Scratch Canvas Overlay -->
+                <canvas id="scratch-canvas"></canvas>
+              </div>
+
+            </div>
+
+            <div class="event-actions-row">
+              <a href="https://calendar.google.com/calendar/render?action=TEMPLATE&text=Wedding+(শুভ+বিবাহ)+-+Nandita+%26+Rakesh&dates=20261126T180000/20261126T233000&details=Auspicious+Assamese+Wedding+Ceremony+of+Nandita+%26+Rakesh" 
+                 target="_blank" rel="noopener noreferrer" class="cal-link-btn" style="background: #fee2e2; border-color: #b91c1c;">
+                <span>Google Calendar</span> 💍
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- 3. RECEPTION (অভ্যৰ্থনা) - INVITATION DAY -->
+        <div class="timeline-node">
+          <div class="node-marker"></div>
+          <div class="timeline-event-card clearfix">
+            <span id="badge-reception" class="event-badge-pill badge-reception">নিমন্ত্ৰণ দিৱস • Invitation Day</span>
+
+            <div class="event-wrap-container clearfix">
+              <img src="assets/Faceless Couple in a Romantic Embrace.png" 
+                   alt="Reception Celebration - Rakesh &amp; Nandita" 
+                   class="event-wrap-img" 
+                   loading="lazy">
+
+              <h3 id="reception-title" class="event-name-title">অভ্যৰ্থনা (Reception)</h3>
+              <div id="reception-date" class="event-date-display">২৮ নৱেম্বৰ, ২০২৬ (শনিবাৰ)</div>
+              <div class="event-date-en">28th November, 2026</div>
+
+              <p id="reception-desc" class="event-desc-text">
+                নৱদম্পতীক আশীৰ্বাদ আৰু প্ৰীতিভোজৰ আনন্দময় অভ্যৰ্থনা অনুষ্ঠান।
+              </p>
+            </div>
+
+            <div class="event-actions-row">
+              <a href="https://calendar.google.com/calendar/render?action=TEMPLATE&text=Reception+(অভ্যৰ্থনা)+-+Nandita+%26+Rakesh&dates=20261128T183000/20261128T230000&details=Grand+Wedding+Reception+of+Nandita+%26+Rakesh" 
+                 target="_blank" rel="noopener noreferrer" class="cal-link-btn">
+                <span>Google Calendar</span> 🎉
+              </a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+
+
+    <!-- ====================================================================
+         7. HEARTFELT INVITATION & BLESSINGS (ৰভাৰ তলত নিমন্ত্ৰণ)
+         ==================================================================== -->
+    <section class="blessing-invitation-section">
+      <div class="blessing-invitation-card">
+        <div class="blessing-invitation-emblem">
+          <img src="assets/xorai.svg" alt="Xorai" class="blessing-xorai-icon">
+        </div>
+
+        <p id="blessing-invitation-text" class="blessing-invitation-lead">
+          আমাৰ জীৱনৰ এই গুৰুত্বপূৰ্ণঁ দিনটোত আপুনি সপৰিয়ালে উপস্থিত হৈ আমাক দিহাই বুদ্ধিয়ে, বিয়ানাম এফাঁকি আৰু এজোলোকা উৰুলিৰে আশীৰ্বাদ দিবহি বুলি ৰভাৰ তলত বৰ আশাৰে বাট চাই থাকিম।
+        </p>
+
+        <div class="blessing-invitation-reminder-wrap">
+          <p id="blessing-invitation-reminder" class="blessing-invitation-reminder">
+            🗓️ কেলেণ্ডাৰত তাৰিখটো দাগ এটা দি থ’বচোন।
+          </p>
+        </div>
+
+        <div class="card-divider-flourish">
+          <span class="line"></span>
+          <span class="icon">❖ ❦ ❖</span>
+          <span class="line"></span>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ====================================================================
+         9. GUEST WISHES WALL (DreamsInvite & SaveOurDate inspired)
+         ==================================================================== -->
+    <section class="rsvp-wishes-section">
+      <span id="wishes-eyebrow" class="section-eyebrow">আপোনাৰ মৰম</span>
+      <h2 id="wishes-title" class="section-title">শুভেচ্ছা <em>বাৰ্তা</em> (Guest Wishes)</h2>
+      <p id="wishes-desc" class="section-desc">নৱদম্পতীৰ বাবে আপোনাৰ মৰম আৰু শুভকামনাৰ দুআষাৰ লিখি পঠিয়াওক।</p>
+
+      <div class="wishes-card-wrap">
+        <form id="wish-form">
+          <input type="text" id="wish-sender" class="wish-input-field" placeholder="আপোনাৰ নাম..." required>
+          <textarea id="wish-message" class="wish-input-field" rows="3" placeholder="নৱদম্পতীক আপোনাৰ শুভেচ্ছা জনাওক..." required></textarea>
+          <button type="submit" id="submit-wish-btn" class="submit-wish-btn">💌 শুভেচ্ছা পঠিয়াওক</button>
+        </form>
+
+        <div id="wishes-feed" class="wishes-feed-list"></div>
+      </div>
+    </section>
+
+    <!-- ====================================================================
+         10. INVITATION SIGNATURE & LOCATION QR (বিবাহ বাহৰ আৰু ঠিকনা)
+         ==================================================================== -->
+    <section class="venue-location-section">
+      <div class="venue-card">
+        <div class="venue-emblem">
+          <img src="assets/xorai.svg" alt="Xorai" class="venue-xorai-icon">
+        </div>
+
+        <div class="venue-signatures">
+          <p id="venue-iti" class="venue-iti-text">ইতি</p>
+          <h3 id="venue-couple" class="venue-couple-names">ৰাকেশ (দৰা) আৰু নন্দিতা (কইনা)</h3>
+          <p id="venue-family" class="venue-family-text">আৰু পৰিয়ালবৰ্গ।</p>
+        </div>
+
+        <div class="card-divider-flourish">
+          <span class="line"></span>
+          <span class="icon">❖ ❦ ❖</span>
+          <span class="line"></span>
+        </div>
+
+        <div class="venue-details-box">
+          <div class="venue-info-row">
+            <span id="venue-label-baahor" class="venue-label">বিবাহ বাহৰঃ</span>
+            <span id="venue-val-baahor" class="venue-value">আমাৰ আপোন ঘৰখন</span>
+          </div>
+          <div class="venue-info-row">
+            <span id="venue-label-address" class="venue-label">ঠিকনাঃ</span>
+            <span id="venue-val-address" class="venue-value">চাৰিঙিয়া গাঁও, যোৰহাট</span>
+          </div>
+        </div>
+
+        <div class="venue-qr-container">
+          <div class="venue-qr-card">
+            <img src="assets/QR Location.jpg" alt="Google Map Location QR" class="venue-qr-img">
+            <p id="venue-qr-caption" class="venue-qr-caption">Scan the QR for Location</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ====================================================================
+         10. SITE FOOTER & CULTURAL BLESSINGS
+         ==================================================================== -->
+    <footer class="site-footer">
+      <div class="footer-motifs-row">
+        <img src="assets/jaapi.svg" alt="Jaapi" class="footer-motif-img">
+        <img src="assets/pepa-dhol.svg" alt="Dhol &amp; Pepa" class="footer-motif-img" style="width: 70px;">
+        <img src="assets/xorai.svg" alt="Xorai" class="footer-motif-img">
+      </div>
+
+      <div id="footer-blessing" class="footer-blessing-text">॥ মংগলময় দাম্পত্য জীৱনৰ শুভ কামনাৰে ॥</div>
+      <p id="footer-sub" style="font-size: 0.82rem; color: rgba(250, 245, 237, 0.6);">ৰাকেশ আৰু নন্দিতাৰ শুভ বিবাহ নিমন্ত্ৰণ</p>
+    </footer>
+
+  </div><!-- /.site-container -->
+
+  <!-- ====================================================================
+       11. FLOATING WHATSAPP SHARE BAR (DreamsInvite Signature)
+       ==================================================================== -->
+  <aside class="bottom-share-bar">
+    <a id="whatsapp-share-link" 
+       href="https://api.whatsapp.com/send?text=🌸%20Rakesh%20%26%20Nandita%20Assamese%20Wedding%20Invitation%20🌸%0AEvents%3A%20Jurun%20(25%20Nov)%2C%20Wedding%20(26%20Nov)%2C%20Reception%20(28%20Nov%202026)%0ATap%20to%20view%3A%20" 
+       target="_blank" rel="noopener noreferrer" class="whatsapp-share-btn">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+        <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/>
+      </svg>
+      <span id="whatsapp-share-text">📲 হোৱাটছএপত নিমন্ত্ৰণ শ্বেয়াৰ কৰক</span>
+    </a>
+  </aside>
+
+
+
+  <script src="script.js"></script>
+</body>
+</html>
